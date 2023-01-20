@@ -1,0 +1,22 @@
+
+.container {
+  width: 1640px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+body{
+  background: $dark;
+}
+.d-flex {
+  display: flex;
+}
+.align-items{
+  align-items: center ;
+}
+.justify-content{
+  justify-content: center;
+}
+.center{
+  align-items: center;
+  justify-content: center;
+}

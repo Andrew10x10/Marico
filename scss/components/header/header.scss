@@ -1,0 +1,17 @@
+.header {
+  &__wrapper {
+  }
+
+  &__navigation {
+  }
+
+  &__logo {
+    text-decoration: none;
+    gap: 17px;
+  }
+  .burger {
+    font-weight: $font-weight-extraBold;
+    font-size: $font-xx-large;
+    color: $white;
+  }
+}
