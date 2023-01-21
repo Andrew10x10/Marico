@@ -1,16 +1,21 @@
 
 .container {
-  width: 1640px;
+  max-width: 1640px;
   padding: 0 15px;
   margin: 0 auto;
 }
 body{
+  font-family: $main-font;
   background: $dark;
+}
+a{
+  text-decoration: none;
+  color: #707070;
 }
 .d-flex {
   display: flex;
 }
-.align-items{
+.align-items-center{
   align-items: center ;
 }
 .justify-content{
@@ -19,4 +24,7 @@ body{
 .center{
   align-items: center;
   justify-content: center;
+}
+.btn{
+  border-radius: 3px;
 }

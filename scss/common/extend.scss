@@ -1,0 +1,21 @@
+%line {
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: $active-accent-color;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .9s;
+  }
+}
+
+%hover-line {
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}

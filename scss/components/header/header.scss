@@ -1,17 +1,78 @@
 .header {
+  padding: 46px 0 128px;
+
   &__wrapper {
+    justify-content: space-around;
   }
 
   &__navigation {
+    &-list {
+      gap: 39px;
+    }
+
+    &-link {
+      font-size: $font-x-large;
+      font-weight: $font-weight-medium;
+      position: relative;
+      @extend %line ;
+      @extend %hover-line;
+
+      &:hover {
+        color: $active-accent-color;
+      }
+      &:active {
+        color: $accent-color;
+      }
+    }
   }
 
   &__logo {
     text-decoration: none;
     gap: 17px;
+
+    &:hover {
+      box-shadow: -20px -10px 130px #3c82f4;
+      transition: 1.3s;
+
+      .header__logo-name {
+        position: relative;
+        @extend %line ;
+        @extend %hover-line;
+        opacity: 0.7;
+        transition: 1s;
+      }
+    }
+
+    &-name {
+      font-weight: $font-weight-extraBold;
+      font-size: $font-xx-large;
+      color: $white;
+    }
   }
-  .burger {
-    font-weight: $font-weight-extraBold;
-    font-size: $font-xx-large;
-    color: $white;
+  &__login-sign-up {
+    gap: 2px;
+
+    .login-btn, .sign-up-btn {
+      padding: 12px 22px;
+
+      &:hover {
+        background: $active-btn-color;
+        color: white;
+        transition: 1s;
+      }
+
+      &:active {
+        background: $accent-color;
+      }
+    }
+
+    .sign-up-btn {
+      padding: 12px 22px;
+    }
   }
 }
+
+//.header__navbar {
+//  background: linear-gradient(90deg, rgba(270, 270, 270, 0) 0%, rgba(200, 00, 00, 0.2) 25%, rgba(270, 270, 270, 0.2) 75%, rgba(2, 2, 2, 0) 100%);
+//  box-shadow: 0 0 25px rgb(0 0 0 / 10%), inset 0 0 1px rgb(255 255 255 / 60%);
+//}

@@ -12,24 +12,32 @@
 <body>
 <header class="header" id="down">
     <div class="container">
-        <div class="header__wrapper">
-            <a class="header__logo d-flex align-items " href="index.html" target="_self">
+        <div class="header__wrapper d-flex align-items-center">
+            <a class="header__logo d-flex align-items-center " href="index.html" target="_self">
                 <img src="/assets/img/logo-min.png" alt="logo-brand">
                 <h2 class="header__logo-name">Marico</h2>
             </a>
-            <div>
+            <div class="header__navigation-wrapper">
                 <label for="media-menu-btn">
                     <a class="burger">Menu</a>
                 </label>
-                <input class="" type="checkbox" id="media-menu-btn">
+                <input class="check-media-menu-btn" type="checkbox" id="media-menu-btn">
                 <nav class="navbar">
-                    <ul>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
+                    <ul class="header__navigation-list d-flex">
+                        <li><a class="header__navigation-link" href="#">Use Cases</a></li>
+                        <li><a class="header__navigation-link" href="#">About</a></li>
+                        <li><a class="header__navigation-link" href="#">Pricing</a></li>
+                        <li><a class="header__navigation-link" href="#">Blog</a></li>
+                        <li class="media-hidden-desktop header__login-sign-up d-flex align-items-center">
+                            <a class="btn login-btn" href="#">Login</a>
+                            <a class="btn sign-up-btn" href="#">Sign-up</a>
+                        </li>
                     </ul>
                 </nav>
+            </div>
+            <div class="header__login-sign-up media-hidden-phone d-flex align-items-center">
+                <a class="btn login-btn" href="#">Login</a>
+                <a class="btn sign-up-btn" href="#">Sign-up</a>
             </div>
         </div>
     </div>
