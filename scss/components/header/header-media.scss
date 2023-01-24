@@ -17,16 +17,11 @@
 
   .burger:hover,
   .burger:active {
-    //color:$secondary-accent-color;
     border-radius: 15px;
-    //box-shadow: 6px 6px 12px $box-shadow-1,-6px -6px 12px $white;
-    //background-color: $button-bg-1;
-    //border: $border-sm solid #999999;
-
   }
 
+  @media (min-width: 877px) {
 
-  @media (min-width: 875px) {
     [for="media-menu-btn"] {
       display: none;
     }
@@ -34,22 +29,14 @@
       display: none;
     }
   }
-  @media (max-width: 875px) {
-    & [for="media-menu-btn"] {
-      display: block;
-    }
-    &__navigation-list {
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-    }
-  }
   @media (max-width: 876px) {
     & {
       z-index: 5;
       position: relative;
-      min-height: $header-height;
-      max-height: $header-height;
+      padding: 40px 0 80px
+    }
+    & [for="media-menu-btn"] {
+      display: block;
     }
     .media-hidden-phone {
       display: none;
@@ -58,6 +45,7 @@
       &-list {
         flex-direction: column;
         gap: 15px;
+        align-items: center;
 
         a {
           display: block;
@@ -66,9 +54,6 @@
           text-align: center;
           font-size: 22px;
 
-          &:hover {
-
-          }
         }
 
       }
@@ -80,7 +65,7 @@
       top: 100px;
       width: 100%;
       left: 0;
-      background: linear-gradient(90deg, rgba(270, 270, 270, 0) 0%, rgba(50, 108, 249, 0.2) 25%, rgba(270, 270, 270, 0.2) 75%, rgba(2, 2, 2, 0) 100%);
+      background: #071720;
       box-shadow: 0 0 25px rgb(0 0 0 / 10%), inset 0 0 1px rgb(255 255 255 / 60%);
 
     }
@@ -91,9 +76,17 @@
         }
       }
     }
-
-
+  }
+  @media (max-width: 576px) {
+    &{
+      padding: 20px 0 50px;
+    }
+    &__logo-name{
+      font-size: 25px;
+    }
+    .burger{
+      font-size: 25px;
+    }
   }
 }
-
 

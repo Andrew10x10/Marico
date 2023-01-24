@@ -1,0 +1,113 @@
+.first-section {
+  text-align: center;
+  padding-bottom: 94px;
+
+  &__title {
+    color: $white;
+  }
+
+  &__title, &__sub-title {
+    font-weight: $font-weight-bold;
+  }
+
+  &__sub-title {
+    background: linear-gradient(90deg, #FE6783 1.9%, #FFBF84 97.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 136px;
+  }
+
+  &__second-sub-title {
+    max-width: 694px;
+    margin: 0 auto 50px;
+    color: $white;
+    font-weight: $font-weight-medium;
+    font-size: $font-xxx-large;
+  }
+
+  &__btn {
+    padding: 23px 75px;
+    border-radius: $border-radius;
+    font-size: $font-x-large;
+    font-weight: $font-weight-medium;
+    border: 1px solid $accent-color;
+
+    &:hover {
+      background: $active-btn-color;
+      color: white;
+      transition: 1s;
+      border: 1px solid $active-btn-color;
+    }
+
+    &:active {
+      background: $accent-color;
+    }
+  }
+
+  &__wrap {
+    text-align: center;
+    gap: 26px;
+    &-btn{
+      gap: 26px;
+      flex-wrap: wrap;
+      margin-bottom: 21px;
+    }
+  }
+
+  &__info {
+
+    gap: 20px;
+    color: $white;
+    flex-wrap: wrap;
+
+    &-circle {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      background: #0FC65C;
+
+      border-radius: 50%;
+
+      &-impulse {
+        position: absolute;
+        background: #0FC65C;
+        border: 4px solid #0FC65C;
+        opacity: 1;
+        border-radius: 50%;
+        animation: loader8435 2s cubic-bezier(0.29, 0.25, 1, 1) infinite;
+        @keyframes loader8435 {
+          0% {
+            top: 6px;
+            left: 2px;
+            width: 0;
+            height: 0;
+            opacity: 0;
+          }
+
+          100% {
+            top: -5px;
+            left: -5px;
+            width: 18px;
+            height: 18px;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+    &-number{
+      font-weight: $font-weight-bold;
+      font-size: 25px;
+      color: $white;
+    }
+    &-text{
+      font-weight: $font-weight-regular;
+      font-size: 25px;
+      color: $accent-color;
+    }
+
+  }
+}
+
+
+
+

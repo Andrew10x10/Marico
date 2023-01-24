@@ -1,0 +1,47 @@
+.first-section {
+  @media (min-width: 1600px) {
+    &__title, &__sub-title {
+      font-size: 112px;
+    }
+  }
+  @media(max-width: 1600px) {
+    &__title, &__sub-title {
+      font-size: 8vw;
+    }
+  }
+  @media (max-width: 876px) {
+    &__sub-title {
+      margin-bottom: 90px;
+    }
+    &__wrap{
+      &-btn{
+        gap: 20px;
+      }
+    }
+    &__info{
+      flex-wrap: wrap;
+    }
+
+  }
+  @media (max-width: 650px) {
+    &__btn {
+      padding: 15px 45px;
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 576px) {
+    &__title, &__sub-title {
+      font-size: 30px;
+    }
+    &__sub-title {
+      margin-bottom: 45px;
+    }
+    &__second-sub-title {
+      font-size: 16px;
+      margin: 0 auto 35px;
+    }
+  }
+  &__info{
+    font-size: 20px;
+  }
+}

@@ -4,27 +4,43 @@
   padding: 0 15px;
   margin: 0 auto;
 }
-body{
+
+body {
   font-family: $main-font;
   background: $dark;
 }
-a{
+
+a {
   text-decoration: none;
   color: #707070;
 }
+
 .d-flex {
   display: flex;
 }
-.align-items-center{
-  align-items: center ;
+
+.align-items-center {
+  align-items: center;
 }
-.justify-content{
+
+.justify-content-center {
   justify-content: center;
 }
-.center{
+
+.center {
   align-items: center;
   justify-content: center;
 }
-.btn{
+
+.btn {
   border-radius: 3px;
+}
+
+.active-btn {
+  color: $white;
+  background: $active-btn-color;
+
+  &:active {
+    background: $accent-color;
+  }
 }
